@@ -10,3 +10,7 @@ def index():
 @app.route('/comprar')
 def comprar():
     return render_template('comprar-tiquetes.html')
+
+@app.route('/login')
+def login():
+    return render_template('register.html')

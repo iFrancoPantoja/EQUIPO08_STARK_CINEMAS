@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="static/css/styles1.css">
+	<link rel="stylesheet" href="{{ url_for("static", filename="css/styles3.css") }}">
+	<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet"> 
+	<title>Stark Cinemas - Iniciar Sesion</title>
+</head>
+<body>
+	<header>
+		<div class="contenedor">
+			<h2 class="logotipo">Registro/Login</h2>
+			<nav>
+				<a href="{{ url_for( "index" ) }}">Cartelera</a>
+				<a href="#">Buscar Peliculas</a>
+				<a href="{{ url_for( "comprar" ) }}">Comprar Tiquetes</a>
+				<a href="#" class="activo">Registrate</a>
+			</nav>
+		</div>
+	</header>
+
+	<header>
+		<div class="form-structor">
+			<div class="signup">
+				<h2 class="form-title" id="signup"><span>O</span>Registrate</h2>
+				<div class="form-holder">
+					<input type="text" class="input" placeholder="Nombre y Apellido" />
+					<input type="email" class="input" placeholder="Email" />
+					<input type="password" class="input" placeholder="Contraseña" />
+				</div>
+				<button class="submit-btn">Registrate</button>
+			</div>
+			<div class="login slide-up">
+				<div class="center">
+					<h2 class="form-title" id="login"><span>O</span>Logueate</h2>
+					<div class="form-holder">
+						<input type="email" class="input" placeholder="Email" />
+						<input type="password" class="input" placeholder="Contraseña" />
+					</div>
+					<button class="submit-btn">Iniciar Sesion</button>
+				</div>
+			</div>
+		</div>
+		<script src="https://kit.fontawesome.com/2c36e9b7b1.js" crossorigin="anonymous"></script>
+		<script src="static/js/main.js"</script>
+	
+</body>
+</html>
